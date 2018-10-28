@@ -296,6 +296,7 @@ function getMyPolls(callback) {
 		limit: 100
 	};
 	golos.api.getDiscussionsByBlog(query, function (err, result) {
+		console.log(result);
 		if (result == '') {
 			var $div = document.createElement('tr');
 			$div.innerHTML = `<td colspan="6">` + document.querySelectorAll('.translate-phrases li')[8].innerHTML + `</td>`;
