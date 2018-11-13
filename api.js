@@ -131,6 +131,8 @@ function getHash(callback) {
 		integration()
 	} else if (hash == 'about') {
 		about()
+	} else if (hash == 'donate') {
+		donate()
 	} else if (hash == 'support') {
 		support()
 	} else {
